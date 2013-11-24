@@ -1,0 +1,11 @@
+<h2>
+	Jobs <a class="btn btn-primary pull-right" href="#/jobs/new"><i
+		class="icon-plus-sign icon-white"></i> Post New Job</a>
+</h2>
+
+<table class="table table-striped">
+	<tr ng-repeat="job in jobs">
+		<td><a href="#/jobs/{{job._id}}">{{job.title}}</a></td>
+		<td>{{job.location}}</td>
+	</tr>
+</table>

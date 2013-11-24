@@ -1,0 +1,27 @@
+<form novalidate class="form-horizontal" ng-submit="save()">
+	<div class="control-group">
+		<label class="control-label" for="title">Title</label>
+		<div class="controls">
+			<input type="text" ng-model="job.title" id="title" name="title" required/>
+		</div>
+	</div>
+	
+	<div class="control-group">
+		<label class="control-label" for="description">Description</label>
+		<div class="controls">
+			<textarea id="description" name="description" ng-model="job.description" required></textarea>
+		</div>
+	</div>
+	
+
+	<div class="control-group">
+		<label class="control-label" for="location">Location</label>
+		<div class="controls">
+			<textarea id="location" name="location" ng-model="job.location" required></textarea>
+		</div>
+	</div>
+
+	<div class="control-group">
+		<button id="save" class="btn btn-primary">Post New Job</button>
+	</div>
+</form>
